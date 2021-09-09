@@ -8,7 +8,7 @@ package com.github.shakelang.parseutils.characterinput.charactersource
  *
  * @see CharacterSource
  */
-internal class CharArraySource (
+internal class CharArraySource(
 
     /**
      * The contents of the [CharacterSource] (implementation of [CharacterSource.all])

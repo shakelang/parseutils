@@ -8,3 +8,4 @@
  */
 
 rootProject.name = "parse-utils"
+include("lib")

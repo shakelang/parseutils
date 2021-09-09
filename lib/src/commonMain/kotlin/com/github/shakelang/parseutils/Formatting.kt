@@ -7,7 +7,7 @@ package com.github.shakelang.parseutils
  * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
  */
 @Suppress("unused")
-enum class Formatting (
+enum class Formatting(
 
     /**
      * The formatting-code
@@ -93,7 +93,7 @@ enum class Formatting (
      *
      * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
      */
-    enum class FGColor (
+    enum class FGColor(
 
         /**
          * The formatting-code
@@ -223,7 +223,7 @@ enum class Formatting (
         override fun toString(): String = "\u001B[" + code + 'm'
     }
 
-    enum class BGColor (
+    enum class BGColor(
 
         /**
          * The formatting-code

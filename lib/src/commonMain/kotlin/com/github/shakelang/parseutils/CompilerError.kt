@@ -182,7 +182,7 @@ open class CompilerError : Error {
      *
      * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
      */
-    class ErrorMarker (
+    class ErrorMarker(
 
         /**
          * The source of the [ErrorMarker]
