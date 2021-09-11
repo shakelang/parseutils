@@ -12,6 +12,12 @@ import kotlin.jvm.JvmStatic
 object Characters {
 
     /**
+     * All characters that are used to encode base16 integers (for encoding and decoding unicodes)
+     */
+    @JvmStatic
+    private val base16chars = "0123456789abcdef".toCharArray()
+
+    /**
      * Is the given character a hex character (0-f)
      *
      * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
@@ -112,7 +118,7 @@ object Characters {
                             c = s[++i]
 
                             // Throw an error if the character is not a hex character
-                            if (!com.github.shakelang.parseutils.Characters.isHexCharacter(c)) throw Error("Expecting hex char, got $c")
+                            if (!isHexCharacter(c)) throw Error("Expecting hex char, got $c")
 
                             unicode.append(c)
 
@@ -139,5 +145,68 @@ object Characters {
 
         // Return the generated string
         return string.toString()
+    }
+
+    /**
+     * Escape a string
+     *
+     * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
+     */
+    @JvmStatic
+    fun escapeString(str: String): String = str.toCharArray().joinToString("") { escapeString(it) }
+
+    /**
+     * Escape a character
+     *
+     * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
+     */
+    @JvmStatic
+    fun escapeString(c: Char): String {
+        return when {
+            c == '\\' -> "\\\\"
+            c == '\t' -> "\\t"
+            c == '\b' -> "\\b"
+            c == '\n' -> "\\n"
+            c == '\r' -> "\\r"
+            c == '\'' -> "\\'"
+            c == '\"' -> "\\\""
+            c.code > 255 -> toUnicode(c)
+            else -> c.toString()
+        }
+    }
+
+    /**
+     * Escape a character to an unicode
+     *
+     * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
+     */
+    @JvmStatic
+    fun toUnicode(char: Char) = "\\u${toBase16(char.code)}"
+
+    /**
+     * Get a base 16 char equivalent of an integer
+     *
+     * @author [Nicolas Schmidt &lt;@nsc-de&gt;]
+     */
+    @JvmStatic
+    fun getBase16Character(number: Int) =
+        if (number !in 0..15) throw Error("Input $number should be in range 1..15") else base16chars[number]
+
+    /**
+     * Generate number to base 16
+     *
+     * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
+     */
+    @JvmStatic
+    fun toBase16(number: Int): String {
+        var i = number
+        var x = 65536
+        var base16chars = ""
+        while (x > 1) {
+            base16chars += getBase16Character(i / x)
+            i %= x
+            x /= 16
+        }
+        return base16chars
     }
 }
