@@ -1,17 +1,11 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+nsc-de:
+  name: Nicolas Schmidt
+  title: Founder of @shake-lang, maintainer of the project
+  url: https://github.com/nsc-de
+  image_url: https://github.com/nsc-de.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+miniminelp:
+  name: Minimine
+  title: Member of @shake-lang
+  url: https://github.com/miniminelp
+  image_url: https://github.com/miniminelp.png
