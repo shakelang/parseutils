@@ -1,0 +1,22 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="512" cy="512" r="512" fill="#ABDBDE" />
+  <rect x="318" y="656" width="35" height="40" fill="#E0E0E0" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M320 640H306V712H320V640ZM366 640H352V712H366V640Z" fill="#B8B8B8" />
+  <rect x="191" y="237" width="115" height="518" rx="23" fill="#B8B8B8" />
+  <rect x="191" y="237" width="98" height="518" rx="23" fill="white" fill-opacity="0.2" />
+  <rect x="159" y="710" width="178" height="141" rx="23" fill="#B28DFF" />
+  <rect x="159" y="710" width="151" height="141" rx="23" fill="white" fill-opacity="0.2" />
+  <rect x="366" y="499" width="482" height="332" fill="#E0E0E0" />
+  <rect x="366" y="499" width="482" height="27" fill="black" fill-opacity="0.04" />
+  <rect x="341" y="461" width="532" height="51" rx="15" fill="#454545" />
+  <rect x="341" y="461" width="511" height="51" rx="15" fill="white" fill-opacity="0.2" />
+  <rect x="471" y="550" width="115" height="164" rx="16" fill="#454545" />
+  <rect x="488" y="569" width="81" height="126" fill="#FFEBB8" />
+  <rect x="630" y="550" width="115" height="164" rx="16" fill="#454545" />
+  <rect x="647" y="569" width="81" height="126" fill="#FFEBB8" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M912.503 831C818.692 948.624 674.148 1024 511.999 1024C349.851 1024 205.307 948.624 111.496 831L912.503 831Z" fill="#454545" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M123.931 846C119.693 841.081 115.547 836.08 111.496 831L912.503 831C908.451 836.08 904.305 841.081 900.068 846H123.931Z" fill="black" fill-opacity="0.13" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M111.496 831C98.7993 815.08 87.0316 798.386 76.2754 781H159V831H111.496Z" fill="#C4C4C4" />
+  <path d="M350.801 95.0293L380.244 113.047C373.506 123.008 367.5 133.115 362.227 143.369C356.953 153.477 353.145 164.536 350.801 176.548L345.088 209.727H295.869L300.264 180.723C305.537 146.738 322.383 118.174 350.801 95.0293ZM423.75 95.0293L453.193 113.047C446.455 123.008 440.449 133.115 435.176 143.369C429.902 153.477 426.094 164.536 423.75 176.548L418.037 209.727H368.818L373.213 180.723C378.486 146.738 395.332 118.174 423.75 95.0293Z" fill="white" fill-opacity="0.36" />
+  <path d="M491.646 218.735L460.225 200.278C475.312 178.599 484.761 159.556 488.569 143.149L495.82 102.5H545.259L540.205 135.02C535.225 167.393 519.038 195.298 491.646 218.735ZM565.474 218.735L534.053 200.278C549.141 178.599 558.589 159.556 562.397 143.149L569.648 102.5H619.087L614.033 135.02C609.053 167.393 592.866 195.298 565.474 218.735Z" fill="white" fill-opacity="0.36" />
+</svg>
