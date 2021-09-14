@@ -4,9 +4,9 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./HomepageFeatures.module.css";
 
 type FeatureItem = {
   title: string;
@@ -15,6 +15,7 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
+  /*
   {
     title: 'Easy to Use',
     image: '/img/undraw_docusaurus_mountain.svg',
@@ -44,12 +45,12 @@ const FeatureList: FeatureItem[] = [
         be extended while reusing the same header and footer.
       </>
     ),
-  },
+  },*/
 ];
 
-function Feature({title, image, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <img className={styles.featureSvg} alt={title} src={image} />
       </div>
