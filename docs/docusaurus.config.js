@@ -26,13 +26,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             sidebarPath: require.resolve("./sidebars.js"),
             // Please change this to your repo.
             editUrl:
-              "https://github.com/shake-lang/parse-utils/edit/master/docs/docs/",
+              "https://github.com/shake-lang/parse-utils/edit/master/docs/",
           },
           blog: {
             showReadingTime: true,
             // Please change this to your repo.
             editUrl:
-              "https://github.com/shake-lang/parse-utils/edit/master/docs/blog/",
+              "https://github.com/shake-lang/parse-utils/edit/master/docs/",
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
