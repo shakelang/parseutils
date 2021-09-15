@@ -163,7 +163,7 @@ tasks.register("prepareDocumentationDevelopment") {
     )
 }
 
-tasks.register("documentationDeploy") {
+tasks.register("deployDocumentation") {
     dependsOn(
         "documentationDeploy", // documentation task base
         "yarnDeploy" // start yarn build script
