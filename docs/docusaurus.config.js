@@ -103,7 +103,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
                 },
                 {
                   label: "Dokka",
-                  href: "https://shake-lang.github.io/parse-utils/dokka",
+                  to: "pathname://dokka",
                 },
               ],
             },

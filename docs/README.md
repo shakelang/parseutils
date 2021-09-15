@@ -91,7 +91,11 @@ dependencies {
 
 ## Usage
 
-...
+This is a collection of helpful utilities for parsing stuff
+
+We for example provide:
+
+- [CharacterSources]()
 
 _For more examples, please refer to the [Documentation](https://shake-lang.github.io/parse-utils)_
 
