@@ -9,13 +9,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
   module.exports = {
     title: "Parse Utils by Shake",
     tagline: "Tools for parsing stuff with kotlin",
-    url: "https://shake-lang.github.io",
-    baseUrl: "/parse-utils/",
+    url: "https://shakelang.github.io",
+    baseUrl: "/parseutils/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
-    organizationName: "shake-lang", // Usually your GitHub org/user name.
-    projectName: "parse-utils", // Usually your repo name.
+    organizationName: "shakelang", // Usually your GitHub org/user name.
+    projectName: "parseutils", // Usually your repo name.
 
     presets: [
       [
@@ -26,13 +26,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             sidebarPath: require.resolve("./sidebars.js"),
             // Please change this to your repo.
             editUrl:
-              "https://github.com/shake-lang/parse-utils/edit/master/docs/",
+              "https://github.com/shakelang/parseutils/edit/master/docs/",
           },
           blog: {
             showReadingTime: true,
             // Please change this to your repo.
             editUrl:
-              "https://github.com/shake-lang/parse-utils/edit/master/docs/",
+              "https://github.com/shakelang/parseutils/edit/master/docs/",
           },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
@@ -59,7 +59,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             },
             { to: "/blog", label: "Blog", position: "left" },
             {
-              href: "https://github.com/shake-lang/parse-utils",
+              href: "https://github.com/shakelang/parseutils",
               label: "GitHub",
               position: "right",
             },
@@ -112,11 +112,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
               items: [
                 {
                   label: "Repository",
-                  href: "https://github.com/shake-lang/parse-utils",
+                  href: "https://github.com/shakelang/parseutils",
                 },
                 {
                   label: "Issues",
-                  href: "https://github.com/shake-lang/issues",
+                  href: "https://github.com/shakelang/parseutils/issues",
                 },
               ],
             },
