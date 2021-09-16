@@ -1,6 +1,6 @@
-package com.github.shakelang.parseutils.characterinput.characterinputstream
+package io.github.shakelang.parseutils.characters.streaming
 
-import com.github.shakelang.parseutils.characterinput.charactersource.CharacterSource
+import io.github.shakelang.parseutils.characters.source.CharacterSource
 import kotlin.test.*
 
 /**

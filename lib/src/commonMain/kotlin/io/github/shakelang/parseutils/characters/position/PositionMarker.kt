@@ -1,4 +1,4 @@
-package com.github.shakelang.parseutils.characterinput.position
+package io.github.shakelang.parseutils.characters.position
 
 interface PositionMarker {
     // ***********************************************

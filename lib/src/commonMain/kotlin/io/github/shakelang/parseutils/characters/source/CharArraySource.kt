@@ -1,4 +1,4 @@
-package com.github.shakelang.parseutils.characterinput.charactersource
+package io.github.shakelang.parseutils.characters.source
 
 /**
  * A [CharArraySource] is an implementation of [CharacterSource] that provides the characters based

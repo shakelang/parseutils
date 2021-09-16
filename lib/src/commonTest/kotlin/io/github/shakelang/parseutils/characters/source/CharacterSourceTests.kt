@@ -1,4 +1,4 @@
-package com.github.shakelang.parseutils.characterinput.charactersource
+package io.github.shakelang.parseutils.characters.source
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

@@ -1,8 +1,10 @@
-package com.github.shakelang.parseutils
+package io.github.shakelang.parseutils
 
-import com.github.shakelang.parseutils.characterinput.charactersource.CharacterSource
-import com.github.shakelang.parseutils.characterinput.position.Position
-import com.github.shakelang.parseutils.characterinput.position.PositionMap
+import com.github.shakelang.parseutils.CompilerError
+import com.github.shakelang.parseutils.Formatting
+import io.github.shakelang.parseutils.characters.position.Position
+import io.github.shakelang.parseutils.characters.position.PositionMap
+import io.github.shakelang.parseutils.characters.source.CharacterSource
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertSame

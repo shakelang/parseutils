@@ -1,6 +1,6 @@
-package com.github.shakelang.parseutils.characterinput.position
+package io.github.shakelang.parseutils.characters.position
 
-import com.github.shakelang.parseutils.characterinput.charactersource.CharacterSource
+import io.github.shakelang.parseutils.characters.source.CharacterSource
 
 class PositionMap(val source: CharacterSource, val lineSeparators: IntArray) {
     val location: String?
