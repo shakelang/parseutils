@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://shake-lang.github.io/parse-utils/blog</id>
+    <id>https://shakelang.github.io/parseutils/blog</id>
     <title>Parse Utils by Shake Blog</title>
     <updated>2021-09-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://shake-lang.github.io/parse-utils/blog"/>
+    <link rel="alternate" href="https://shakelang.github.io/parseutils/blog"/>
     <subtitle>Parse Utils by Shake Blog</subtitle>
-    <icon>https://shake-lang.github.io/parse-utils/img/favicon.ico</icon>
+    <icon>https://shakelang.github.io/parseutils/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[No blog posts here at the moment]]></title>
         <id>empty-blog-post</id>
-        <link href="https://shake-lang.github.io/parse-utils/blog/empty-blog-post"/>
+        <link href="https://shakelang.github.io/parseutils/blog/empty-blog-post"/>
         <updated>2021-09-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The blog is empty at the moment. It will be filled as soon as there is something to write here]]></summary>
         <author>

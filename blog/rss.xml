@@ -2,14 +2,14 @@
 <rss version="2.0">
     <channel>
         <title>Parse Utils by Shake Blog</title>
-        <link>https://shake-lang.github.io/parse-utils/blog</link>
+        <link>https://shakelang.github.io/parseutils/blog</link>
         <description>Parse Utils by Shake Blog</description>
         <lastBuildDate>Wed, 15 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[No blog posts here at the moment]]></title>
-            <link>https://shake-lang.github.io/parse-utils/blog/empty-blog-post</link>
+            <link>https://shakelang.github.io/parseutils/blog/empty-blog-post</link>
             <guid>empty-blog-post</guid>
             <pubDate>Wed, 15 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The blog is empty at the moment. It will be filled as soon as there is something to write here]]></description>
