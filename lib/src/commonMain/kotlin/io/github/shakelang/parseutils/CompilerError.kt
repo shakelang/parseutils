@@ -1,8 +1,8 @@
-package com.github.shakelang.parseutils
+package io.github.shakelang.parseutils
 
-import com.github.shakelang.parseutils.Formatting.FGColor
-import com.github.shakelang.parseutils.characterinput.position.Position
-import com.github.shakelang.parseutils.characterinput.position.PositionMap
+import io.github.shakelang.parseutils.Formatting.FGColor
+import io.github.shakelang.parseutils.characters.position.Position
+import io.github.shakelang.parseutils.characters.position.PositionMap
 import kotlin.js.JsName
 
 
@@ -260,7 +260,7 @@ open class CompilerError : Error {
          * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
          */
         private fun createPositionMarker(
-            maxLength: Int = CompilerError.maxLength,
+            maxLength: Int = Companion.maxLength,
             pos1: Position,
             pos2: Position
         ): ErrorMarker {

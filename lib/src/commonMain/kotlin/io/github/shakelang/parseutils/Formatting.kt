@@ -1,4 +1,4 @@
-package com.github.shakelang.parseutils
+package io.github.shakelang.parseutils
 
 
 /**

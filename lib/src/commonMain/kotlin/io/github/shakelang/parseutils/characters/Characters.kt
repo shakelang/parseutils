@@ -1,4 +1,4 @@
-package com.github.shakelang.parseutils
+package io.github.shakelang.parseutils.characters
 
 import kotlin.js.JsName
 import kotlin.jvm.JvmStatic

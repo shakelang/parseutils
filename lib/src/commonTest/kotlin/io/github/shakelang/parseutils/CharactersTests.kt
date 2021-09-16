@@ -1,5 +1,6 @@
 package com.github.shakelang.parseutils
 
+import io.github.shakelang.parseutils.characters.Characters
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
