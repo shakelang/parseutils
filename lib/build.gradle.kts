@@ -145,7 +145,7 @@ kotlin {
 
 tasks.register("documentationBase") {
     dependsOn(
-        "createDokkaInDocs", // execute yarn install
+        "copyDokkaHtml", // execute yarn install
         "yarn" // generate dokka docs & copy them
     )
 }
@@ -179,11 +179,11 @@ listOf(
 }
 
 tasks.register("createDokkaInDocs") {
-    dependsOn("dokkaHtml")
     dependsOn("copyDokkaHtml")
 }
 
 tasks.register<Copy>("copyDokkaHtml") {
+    dependsOn("dokkaHtml")
     from(file("build/docs/html"))
     into(file("../docs/static/dokka/"))
 }
