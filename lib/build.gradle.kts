@@ -1,4 +1,4 @@
-group = "com.github.shakelang.parseutils"
+group = "io.github.shakelang.parseutils"
 version = "0.1.0"
 description = "Utilities for parsing stuff with kotlin"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
@@ -8,7 +8,7 @@ apply(plugin = "java-library")
 plugins {
     kotlin("multiplatform") version "1.5.10"
     id("org.jetbrains.dokka") version "1.4.32"
-    id("com.github.shakelang.parse-utils.conventions")
+    id("com.github.shakelang.parseutils.conventions")
     id("com.github.node-gradle.node") version "3.1.1"
     java
     `maven-publish`
