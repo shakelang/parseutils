@@ -1,0 +1,172 @@
+---
+sidebar_position: 1
+title: Installation
+sidebar_label: Installation
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs groupId="project-type">
+
+<TabItem value="JVM/Gradle" label="JVM/Gradle" default>
+
+To install the JVM/Gradle package just add the dependency
+
+<Tabs groupId="build-scripts">
+
+<TabItem value="groovy" label="build.gradle" default>
+
+```groovy
+dependencies {
+  implementation 'com.github.shakelang.parseutils:lib-jvm:$version'
+}
+```
+
+</TabItem>
+
+<TabItem value="kotlin" label="build.gradle.kts">
+
+```kotlin
+dependencies {
+  implementation("com.github.shakelang.parseutils:lib-jvm:$version")
+}
+```
+
+</TabItem>
+</Tabs>
+
+</TabItem>
+<TabItem value="JVM/Maven" label="JVM/Maven">
+
+Just add the maven dependency to your project.
+
+```xml
+<dependencies>
+   <dependency>
+      <groupId>com.github.shakelang.parseutils</groupId>
+      <artifactId>lib-jvm</artifactId>
+      <version>{version}</version>
+   </dependency>
+</dependencies>
+```
+
+</TabItem>
+
+<TabItem value="JS">
+
+Add the following dependency to your dependencies block:
+
+<Tabs groupId="build-scripts">
+
+<TabItem value="groovy" label="build.gradle" default>
+
+```groovy
+dependencies {
+  implementation 'com.github.shakelang.parseutils:lib-js:$version'
+}
+```
+
+</TabItem>
+
+<TabItem value="kotlin" label="build.gradle.kts">
+
+```kotlin
+dependencies {
+  implementation("com.github.shakelang.parseutils:lib-js:$version")
+}
+```
+
+</TabItem>
+</Tabs>
+
+Alternatively, add the dependency to the Javascript specific target.
+
+<Tabs defaultValue="groovy" groupId="build-scripts">
+
+<TabItem value="groovy" label="build.gradle" default>
+
+```groovy
+kotlin {
+   targets {
+      js {
+         browser()
+         nodejs()
+      }
+   }
+   sourceSets {
+      val jsTest by getting {
+         dependencies {
+           implementation 'com.github.shakelang.parseutils:lib-js:$version'
+         }
+      }
+   }
+}
+```
+
+</TabItem>
+
+<TabItem value="kotlin" label="build.gradle.kts">
+
+```kotlin
+kotlin {
+   targets {
+      js {
+         browser()
+         nodejs()
+      }
+   }
+   sourceSets {
+      val jsTest by getting {
+         dependencies {
+           implementation("com.github.shakelang.parseutils:lib-js:$version")
+         }
+      }
+   }
+}
+```
+
+</TabItem>
+</Tabs>
+</TabItem>
+<TabItem value="Multiplatform">
+
+For multiplattform you can just add the dependency to your commonMain
+
+<Tabs defaultValue="groovy" groupId="build-scripts">
+<TabItem value="groovy" label="build.gradle" default>
+
+```groovy
+kotlin {
+   ...
+   sourceSets {
+      val commonMain by getting {
+         dependencies {
+           implementation 'com.github.shakelang.parseutils:lib:$version'
+         }
+      }
+   }
+}
+```
+
+</TabItem>
+
+<TabItem value="kotlin" label="build.gradle.kts">
+
+```kotlin
+kotlin {
+   ...
+   sourceSets {
+      val commonMain by getting {
+         dependencies {
+           implementation("com.github.shakelang.parseutils:lib:$version")
+         }
+      }
+   }
+}
+```
+
+</TabItem>
+</Tabs>
+</TabItem>
+</Tabs>
