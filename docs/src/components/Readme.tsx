@@ -7,48 +7,48 @@ export default function Readme() {
       <div className="readme">
         <br />
         <p>
-          <a href="https://github.com/shake-lang/parse-utils/graphs/contributors">
+          <a href="https://github.com/shakelang/parseutils/graphs/contributors">
             <img
-              src="https://img.shields.io/github/contributors/shake-lang/parse-utils.svg?style=for-the-badge"
+              src="https://img.shields.io/github/contributors/shakelang/parseutils.svg?style=for-the-badge"
               alt="Contributors"
             />
           </a>
-          <a href="https://github.com/shake-lang/parse-utils/network/members">
+          <a href="https://github.com/shakelang/parseutils/network/members">
             <img
-              src="https://img.shields.io/github/forks/shake-lang/parse-utils.svg?style=for-the-badge"
+              src="https://img.shields.io/github/forks/shakelang/parseutils.svg?style=for-the-badge"
               alt="Forks"
             />
           </a>
-          <a href="https://github.com/shake-lang/parse-utils/stargazers">
+          <a href="https://github.com/shakelang/parseutils/stargazers">
             <img
-              src="https://img.shields.io/github/stars/shake-lang/parse-utils.svg?style=for-the-badge"
+              src="https://img.shields.io/github/stars/shakelang/parseutils.svg?style=for-the-badge"
               alt="Stargazers"
             />
           </a>
-          <a href="https://github.com/shake-lang/parse-utils/issues">
+          <a href="https://github.com/shakelang/parseutils/issues">
             <img
-              src="https://img.shields.io/github/issues/shake-lang/parse-utils.svg?style=for-the-badge"
+              src="https://img.shields.io/github/issues/shakelang/parseutils.svg?style=for-the-badge"
               alt="Issues"
             />
           </a>
-          <a href="https://github.com/shake-lang/parse-utils/blob/master/LICENSE.txt">
+          <a href="https://github.com/shakelang/parseutils/blob/master/LICENSE.txt">
             <img
-              src="https://img.shields.io/github/license/shake-lang/parse-utils.svg?style=for-the-badge"
+              src="https://img.shields.io/github/license/shakelang/parseutils.svg?style=for-the-badge"
               alt="BSD-2-Clause"
             />
           </a>
         </p>
         <br />
         <p>
-          <a href="https://github.com/shake-lang/parse-utils">
+          <a href="https://github.com/shakelang/parseutils">
             <img
-              src="https://raw.githubusercontent.com/shake-lang/parse-utils/master/.github/assets/parse-utils-header-x1024.png"
+              src="https://raw.githubusercontent.com/shakelang/parseutils/master/.github/assets/parseutils-header-x1024.png"
               alt="header-image"
             />
           </a>
-          <a href="https://shake-lang.github.io/">
+          <a href="https://shakelang.github.io/">
             <img
-              src="https://raw.githubusercontent.com/shake-lang/parse-utils/master/.github/assets/parse-utils-by-shake-x1024.png"
+              src="https://raw.githubusercontent.com/shakelang/parseutils/master/.github/assets/parseutils-by-shake-x1024.png"
               alt="sub-header-image"
             />
           </a>
@@ -62,17 +62,17 @@ export default function Readme() {
               interpreter
             </i>
             <br />
-            <a href="https://github.com/shake-lang/parse-utils">
+            <a href="https://github.com/shakelang/parseutils">
               <strong>Explore the docs »</strong>
             </a>
             <br />
             <br />
-            <a href="https://github.com/shake-lang/parse-utils">View Demo</a>·
-            <a href="https://github.com/shake-lang/parse-utils/issues">
+            <a href="https://github.com/shakelang/parseutils">View Demo</a>·
+            <a href="https://github.com/shakelang/parseutils/issues">
               Report Bug
             </a>
             ·
-            <a href="https://github.com/shake-lang/parse-utils/issues">
+            <a href="https://github.com/shakelang/parseutils/issues">
               Request Feature
             </a>
           </p>
@@ -175,13 +175,13 @@ export default function Readme() {
         <p>
           <em>
             For more examples, please refer to the{" "}
-            <a href="https://shake-lang.github.io/parse-utils">Documentation</a>
+            <a href="https://shakelang.github.io/parseutils">Documentation</a>
           </em>
         </p>
         <h2 id="building">Building</h2>
         <p>
           First clone the repository using{" "}
-          <code>git clone https://shake-lang.github.io/parse-utils</code>
+          <code>git clone https://shakelang.github.io/parseutils</code>
         </p>
         <p>
           If you are on linux you need to make the build script executable using
@@ -199,7 +199,7 @@ export default function Readme() {
         <h2 id="roadmap">Roadmap</h2>
         <p>
           See the{" "}
-          <a href="https://github.com/shake-lang/parse-utils/issues">
+          <a href="https://github.com/shakelang/parseutils/issues">
             open issues
           </a>{" "}
           for a list of proposed features (and known issues).

@@ -4,6 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![BSD-2-Clause][license-shield]][license-url]
 
+<!-- PROJECT LOGO -->
 <br />
 
 [![header-image][header-image]][header-link]
@@ -18,19 +19,20 @@
         these tools are for example used by the shake compiler & interpreter 
     </i>
     <br />
-    <a href="https://github.com/shake-lang/parse-utils"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/shakelang/parseutils"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/shake-lang/parse-utils">View Demo</a>
+    <a href="https://github.com/shakelang/parseutils">View Demo</a>
     ·
-    <a href="https://github.com/shake-lang/parse-utils/issues">Report Bug</a>
+    <a href="https://github.com/shakelang/parseutils/issues">Report Bug</a>
     ·
-    <a href="https://github.com/shake-lang/parse-utils/issues">Request Feature</a>
+    <a href="https://github.com/shakelang/parseutils/issues">Request Feature</a>
   </p>
 </p>
 
+<!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -53,6 +55,7 @@
   </ol>
 </details>
 
+<!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
@@ -60,6 +63,8 @@
 
 - [Kotlin](https://kotlinlang.org/)
 - [Gradle](https://gradle.org/)
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
@@ -89,19 +94,19 @@ dependencies {
 }
 ```
 
+<!-- USAGE EXAMPLES -->
+
 ## Usage
 
-This is a collection of helpful utilities for parsing stuff
+...
 
-We for example provide:
+_For more examples, please refer to the [Documentation](https://shakelang.github.io/parseutils)_
 
-- [CharacterSources]()
-
-_For more examples, please refer to the [Documentation](https://shake-lang.github.io/parse-utils)_
+<!-- Building -->
 
 ## Building
 
-First clone the repository using `git clone https://shake-lang.github.io/parse-utils`
+First clone the repository using `git clone https://shakelang.github.io/parseutils`
 
 If you are on linux you need to make the build script executable using
 
@@ -115,10 +120,14 @@ now just build the project using
 ./gradlew build
 ```
 
+<!-- ROADMAP -->
+
 ## Roadmap
 
-See the [open issues](https://github.com/shake-lang/parse-utils/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/shakelang/parseutils/issues) for a list of proposed features (and known
 issues).
+
+<!-- CONTRIBUTING -->
 
 ## Contributing
 
@@ -131,26 +140,26 @@ contributions you make are **greatly appreciated**.
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+<!-- LICENSE -->
+
 ## License
 
 Distributed under the BSD-2-Clause License. See [`LICENSE`](LICENSE) for more information.
 
-[header-image]: https://raw.githubusercontent.com/shake-lang/parse-utils/master/.github/assets/parse-utils-header-x1024.png
-[header-link]: https://github.com/shake-lang/parse-utils
-[sub-header-image]: https://raw.githubusercontent.com/shake-lang/parse-utils/master/.github/assets/parse-utils-by-shake-x1024.png
-[sub-header-link]: https://shake-lang.github.io/
-[contributors-shield]: https://img.shields.io/github/contributors/shake-lang/parse-utils.svg?style=for-the-badge
-[contributors-url]: https://github.com/shake-lang/parse-utils/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shake-lang/parse-utils.svg?style=for-the-badge
-[forks-url]: https://github.com/shake-lang/parse-utils/network/members
-[stars-shield]: https://img.shields.io/github/stars/shake-lang/parse-utils.svg?style=for-the-badge
-[stars-url]: https://github.com/shake-lang/parse-utils/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shake-lang/parse-utils.svg?style=for-the-badge
-[issues-url]: https://github.com/shake-lang/parse-utils/issues
-[license-shield]: https://img.shields.io/github/license/shake-lang/parse-utils.svg?style=for-the-badge
-[license-url]: https://github.com/shake-lang/parse-utils/blob/master/LICENSE.txt
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![BSD-2-Clause][license-shield]][license-url]
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[header-image]: .github/assets/parseutils-header-x1024.png
+[header-link]: https://shakelang.github.io/parseutils
+[sub-header-image]: .github/assets/parseutils-by-shake-x1024.png
+[sub-header-link]: https://shakelang.github.io/
+[contributors-shield]: https://img.shields.io/github/contributors/shakelang/parseutils.svg?style=for-the-badge
+[contributors-url]: https://github.com/shakelang/parseutils/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shakelang/parseutils.svg?style=for-the-badge
+[forks-url]: https://github.com/shakelang/parseutils/network/members
+[stars-shield]: https://img.shields.io/github/stars/shakelang/parseutils.svg?style=for-the-badge
+[stars-url]: https://github.com/shakelang/parseutils/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shakelang/parseutils.svg?style=for-the-badge
+[issues-url]: https://github.com/shakelang/parseutils/issues
+[license-shield]: https://img.shields.io/github/license/shakelang/parseutils.svg?style=for-the-badge
+[license-url]: https://github.com/shakelang/parseutils/blob/master/LICENSE.txt
