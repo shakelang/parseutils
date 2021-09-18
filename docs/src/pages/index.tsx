@@ -21,6 +21,15 @@ function HomepageHeader() {
           >
             ParseUtils documentation &nbsp;🚀
           </Link>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=shakelang&repo=parseutils&type=star&count=true&size=large"
+            frameBorder="0"
+            scrolling="0"
+            width="170"
+            height="30"
+            title="GitHub"
+          />
         </div>
       </div>
     </header>
