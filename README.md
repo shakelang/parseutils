@@ -17,7 +17,7 @@
 
   <p align="center">
     <i>
-        This package provides tools for some tools for parsing code
+        This package provides tools for parsing code
         <br/>
         these tools are for example used by the shake compiler & interpreter 
     </i>
