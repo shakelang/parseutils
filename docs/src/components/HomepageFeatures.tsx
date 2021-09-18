@@ -6,13 +6,14 @@
  */
 import React from "react";
 import clsx from "clsx";
-import styles from "./HomepageFeatures.module.css";
+import styles from "./HomepageFeatures.module.sass";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type FeatureItem = {
   title: string;
   image: string;
   description: JSX.Element;
+  sizeClass?: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -54,10 +55,10 @@ const FeatureList: FeatureItem[] = [
   },*/
 ];
 
-function Feature({ title, image, description }: FeatureItem) {
+function Feature({ title, image, description, sizeClass }: FeatureItem) {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col", sizeClass || "col--4", styles.feature)}>
       <div className="text--center">
         <img
           className={styles.featureSvg}
@@ -79,9 +80,9 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className={clsx("row", styles.featuresContainer)}>
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature key={idx} sizeClass={`col--4`} {...props} />
           ))}
         </div>
       </div>
