@@ -14,7 +14,14 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
+const url_base = "/parseutils";
+
 const FeatureList: FeatureItem[] = [
+  {
+    title: "Character Processing",
+    image: `${url_base}/img/undraw_utils_letter_factory_cloud.svg`,
+    description: <>Parse Utils provides tools for parsing Strings</>,
+  },
   /*
   {
     title: 'Easy to Use',
