@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
+import styles from "./index.module.sass";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Readme from "../components/Readme";
 
@@ -21,7 +21,7 @@ function HomepageHeader() {
           >
             ParseUtils documentation &nbsp;🚀
           </Link>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;
           <iframe
             src="https://ghbtns.com/github-btn.html?user=shakelang&repo=parseutils&type=star&count=true&size=large"
             frameBorder="0"
