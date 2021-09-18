@@ -7,6 +7,7 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 type FeatureItem = {
   title: string;
@@ -14,12 +15,10 @@ type FeatureItem = {
   description: JSX.Element;
 };
 
-const url_base = "/parseutils";
-
 const FeatureList: FeatureItem[] = [
   {
     title: "Character Processing",
-    image: `${url_base}/img/undraw_utils_letter_factory_cloud.svg`,
+    image: `/img/undraw_utils_letter_factory_cloud.svg`,
     description: <>Parse Utils provides tools for parsing Strings</>,
   },
   /*
@@ -56,10 +55,17 @@ const FeatureList: FeatureItem[] = [
 ];
 
 function Feature({ title, image, description }: FeatureItem) {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={styles.featureSvg} alt={title} src={image} />
+        <img
+          className={styles.featureSvg}
+          alt={title}
+          src={
+            image.startsWith("/") ? siteConfig.baseUrl + image.substr(1) : image
+          }
+        />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
