@@ -153,20 +153,12 @@ open class CompilerError : Error {
         cause: Throwable? = null
     ) : this(
         message,
-        createPositionMarker(
-            maxLength,
-            map.resolve(start).also { start_zw = it },
-            map.resolve(end).also { end_zw = it }
-        ),
         exceptionName,
         details,
-        start_zw!!,
-        end_zw!!,
+        map.resolve(start),
+        map.resolve(end),
         cause
-    ) {
-        end_zw = null
-        start_zw = null
-    }
+    )
 
 
     /**
@@ -242,17 +234,7 @@ open class CompilerError : Error {
          *
          * @author [Nicolas Schmidt &lt;@nsc-de&gt;](https://github.com/nsc-de)
          */
-        var maxLength = 60
-
-        /**
-         * This is a temporary variable that is needed for a constructor of the [CompilerError]
-         */
-        private var start_zw: Position? = null
-
-        /**
-         * This is a temporary variable that is needed for a constructor of the [CompilerError]
-         */
-        private var end_zw: Position? = null
+        const val maxLength = 60
 
         /**
          * Creates a [ErrorMarker]

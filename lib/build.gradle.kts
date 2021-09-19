@@ -1,25 +1,16 @@
+plugins {
+    kotlin("multiplatform") version "1.5.30"
+    id("org.jetbrains.dokka") version "1.4.32"
+    id("com.github.node-gradle.node") version "3.1.1"
+    id("maven-publish")
+}
+
 group = "io.github.shakelang.parseutils"
 version = "0.1.0"
 description = "Utilities for parsing stuff with kotlin"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
-
-apply(plugin = "java-library")
-
-plugins {
-    kotlin("multiplatform") version "1.5.10"
-    id("org.jetbrains.dokka") version "1.4.32"
-    id("com.github.shakelang.parseutils.conventions")
-    id("com.github.node-gradle.node") version "3.1.1"
-    java
-    `maven-publish`
-}
 
 repositories {
-    mavenLocal()
     mavenCentral()
-}
-
-dependencies {
 }
 
 node {
@@ -34,25 +25,25 @@ node {
     // Change it if you want to use a mirror
     // Or set to null if you want to add the repository on your own.
     distBaseUrl.set("https://nodejs.org/dist")
-    
+
     // The npm command executed by the npmInstall task
     // By default it is install but it can be changed to ci
     npmInstallCommand.set("ci")
-    
-    // The directory where Node.js is unpacked (when download is true) 
+
+    // The directory where Node.js is unpacked (when download is true)
     workDir.set(file("${project.rootDir}/.gradle/nodejs"))
-    
+
     // The directory where npm is installed (when a specific version is defined)
     npmWorkDir.set(file("${project.rootDir}/.gradle/npm"))
-    
+
     // The directory where yarn is installed (when a Yarn task is used)
     yarnWorkDir.set(file("${project.rootDir}/.gradle/yarn"))
-    
+
     // The Node.js project directory location
     // This is where the package.json file and node_modules directory are located
     // By default it is at the root of the current project
     nodeProjectDir.set(file("${project.rootDir}/docs"))
-    
+
     // Whether the plugin automatically should add the proxy configuration to npm and yarn commands
     // according the proxy configuration defined for Gradle
     // Disable this option if you want to configure the proxy for npm or yarn on your own
@@ -102,18 +93,12 @@ kotlin {
         }
     }
     js(LEGACY) {
-        nodejs {
-        }
         browser {
-            compilations["main"].packageJson {
-                customField("browser", mapOf( "fs" to false, "path" to false, "os" to false))
-            }
             commonWebpackConfig {
                 cssSupport.enabled = true
             }
         }
     }
-    /*
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")
     val nativeTarget = when {
@@ -122,13 +107,10 @@ kotlin {
         isMingwX64 -> mingwX64("native")
         else -> throw GradleException("Host OS is not supported in Kotlin/Native.")
     }
-    */
 
 
     sourceSets {
-        val commonMain by getting {
-
-        }
+        val commonMain by getting
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
@@ -138,10 +120,11 @@ kotlin {
         val jvmTest by getting
         val jsMain by getting
         val jsTest by getting
-        // val nativeMain by getting
-        // val nativeTest by getting
+        val nativeMain by getting
+        val nativeTest by getting
     }
 }
+
 
 tasks.register("documentationBase") {
     dependsOn(
@@ -187,5 +170,3 @@ tasks.register<Copy>("copyDokkaHtml") {
     from(file("build/docs/html"))
     into(file("../docs/static/dokka/"))
 }
-
-tasks.test.get().dependsOn(tasks["allTests"])
