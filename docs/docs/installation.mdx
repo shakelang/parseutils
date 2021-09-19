@@ -19,7 +19,7 @@ To install the JVM/Gradle package just add the dependency
 
 ```groovy
 dependencies {
-  implementation 'com.github.shakelang.parseutils:lib-jvm:$version'
+  implementation 'io.github.shakelang.parseutils:lib-jvm:$version'
 }
 ```
 
@@ -29,7 +29,7 @@ dependencies {
 
 ```kotlin
 dependencies {
-  implementation("com.github.shakelang.parseutils:lib-jvm:$version")
+  implementation("io.github.shakelang.parseutils:lib-jvm:$version")
 }
 ```
 
@@ -44,7 +44,7 @@ Just add the maven dependency to your project.
 ```xml
 <dependencies>
    <dependency>
-      <groupId>com.github.shakelang.parseutils</groupId>
+      <groupId>io.github.shakelang.parseutils</groupId>
       <artifactId>lib-jvm</artifactId>
       <version>{version}</version>
    </dependency>
@@ -63,7 +63,7 @@ Add the following dependency to your dependencies block:
 
 ```groovy
 dependencies {
-  implementation 'com.github.shakelang.parseutils:lib-js:$version'
+  implementation 'io.github.shakelang.parseutils:lib-js:$version'
 }
 ```
 
@@ -73,7 +73,7 @@ dependencies {
 
 ```kotlin
 dependencies {
-  implementation("com.github.shakelang.parseutils:lib-js:$version")
+  implementation("io.github.shakelang.parseutils:lib-js:$version")
 }
 ```
 
@@ -97,7 +97,7 @@ kotlin {
    sourceSets {
       val jsTest by getting {
          dependencies {
-           implementation 'com.github.shakelang.parseutils:lib-js:$version'
+           implementation 'io.github.shakelang.parseutils:lib-js:$version'
          }
       }
    }
@@ -119,7 +119,7 @@ kotlin {
    sourceSets {
       val jsTest by getting {
          dependencies {
-           implementation("com.github.shakelang.parseutils:lib-js:$version")
+           implementation("io.github.shakelang.parseutils:lib-js:$version")
          }
       }
    }
@@ -142,7 +142,7 @@ kotlin {
    sourceSets {
       val commonMain by getting {
          dependencies {
-           implementation 'com.github.shakelang.parseutils:lib:$version'
+           implementation 'io.github.shakelang.parseutils:lib:$version'
          }
       }
    }
@@ -159,7 +159,7 @@ kotlin {
    sourceSets {
       val commonMain by getting {
          dependencies {
-           implementation("com.github.shakelang.parseutils:lib:$version")
+           implementation("io.github.shakelang.parseutils:lib:$version")
          }
       }
    }
