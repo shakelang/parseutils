@@ -1,3 +1,6 @@
+# ARCHIVED
+This package is now included in the shake main repository (https://github.com/shakelang/shake)
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
